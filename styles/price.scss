@@ -1,0 +1,136 @@
+.price {
+  display: flex;
+  padding: 115px 132px;
+
+  &-card {
+    position: relative;
+    padding: 33px 0 40px 0;
+    background-color: $color-grey;
+    margin-right: 18px;
+    flex: 1;
+
+    &__list_item {
+      &-green {
+        &:before {
+          content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
+          padding-right: 22px;
+        }
+      }
+      &-blue {
+        &:before {
+          content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
+          padding-right: 22px;
+        }
+      }
+
+      &-orange {
+        &:before {
+          content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
+          padding-right: 22px;
+        }
+      }
+    }
+
+    &__trapeize {
+      position: absolute;
+      top: 32px;
+      right: -31px;
+      width: 150px;
+      border-bottom: 25px solid $color-red;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      transform: rotate(45deg);
+
+      &-popular {
+        position: absolute;
+        top: 6px;
+        right: 12px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &__title {
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 43px;
+      text-align: center;
+      margin: 0;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    &__price {
+      padding: 19px 110px;
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 67px;
+      text-align: center;
+      margin-top: 33px;
+      background-color: $color-green;
+
+      &-blue {
+        background-color: $color-blue;
+      }
+
+      &-orange {
+        background-color: $color-orange;
+      }
+    }
+
+    &__description {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 18px;
+      text-align: center;
+      margin: 40px 26px;
+      margin-bottom: 0;
+    }
+
+    &__options-list {
+      margin: 40px 0;
+      padding-left: 0;
+      list-style-type: none;
+
+      &_item {
+        padding: 16px 0;
+        padding-left: 22px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 18px;
+
+        &:nth-child(odd) {
+          background-color: $color-dark-grey;
+        }
+      }
+    }
+    &__order-btn {
+      display: flex;
+      text-transform: uppercase;
+      margin: auto;
+      padding: 11px 27px;
+      border: none;
+      border-radius: 20px;
+      background-color: $color-green;
+      color: $text-color-white;
+
+      &_blue {
+        background-color: $color-blue;
+      }
+
+      &_orange {
+        background-color: $color-orange;
+      }
+    }
+  }
+}

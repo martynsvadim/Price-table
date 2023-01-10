@@ -1,0 +1,20 @@
+@import 'variables.scss';
+@import 'price.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  color: $text-color-white;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  background-color: #141b1c;
+  margin: auto;
+}
